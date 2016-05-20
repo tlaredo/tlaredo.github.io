@@ -30,6 +30,12 @@
         border: 1px solid grey;
         background-color: #e8e8e8;
       }
+
+      tr.d0 td {
+        background-color: #FFFFFF;
+        border-bottom-width: 2px;
+      }
+
     </style>
 
   </head>
@@ -60,22 +66,68 @@
           </ul> 
         </div>
 
+        
+
       </div><!-- /.container -->
     </div>
 
-    <h1>Hello, world!</h1>
+    
+    <div class="container">
+      <h1>Our webpage</h1>
+      <form class="form-inline">
+        <div class="form-div">
+          <label>Username</label>
+          <input type="email" class="form-control" name="Username" />
+          <label>Password</label>
+          <input type="password" class="form-control" name="Password" />
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox">Keep me logged in</label>
+          </label>
+          
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Log In" class="btn btn-default">
+        </div>
+
+      </form>
+    </div>
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 box">Content</div>
-        <div class="col-md-6 box">Content</div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 box">Content</div>
-        <div class="col-md-6 box">Content</div>
-        <div class="col-md-6 box">Content</div>
-      </div>
+      <table class="table table-striped">
+        <tr class="d0"><th>First Name</th><th>Last Name</th><th>Age</th><th>Major</th><tr>
+        <tr>
+          <td>Tyler</td>
+          <td>Laredo</td>
+          <td>20</td>
+          <td>Computer Science</td>
+        </tr>
+        <tr>
+          <td>Elle</td>
+          <td>Shwer</td>
+          <td>20</td>
+          <td>Information</td>
+        </tr>
+        <tr>
+          <td>Matt</td>
+          <td>Dunaj</td>
+          <td>21</td>
+          <td>Computer Science</td>
+        </tr>
+        <tr>
+          <td>Alex</td>
+          <td>Brewster</td>
+          <td>22</td>
+          <td>Chemical Engineering</td>
+        </tr>
+      </table>
+
     </div>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
